@@ -15,18 +15,22 @@
             .bigger-font-size {
                 font-size: 150%;
             }
-            h1 {
+            h1, #Copyright {
                 text-align: center;
             }
-            #Slogan {
+            #Slogan, #Newsletter-Subscription {
                 text-align: right; 
             } 
-            </style>
+            .button {
+            background-color: blue;
+            font-size: 18px;
+            height: 35px;
+            }
+        </style>
     </head>
     <body> 
         <h1>DOGWALKERS' HUB</h1>
-        <img src="mainpic.jpg" alt="A person walking a dog"
-        width="600">
+        <img src="mainpic.jpg" alt="A person walking a dog" width="600">
         <h2 id="Slogan" style="position: relative; right: 80px; bottom: 230px;">You don't have to own a dog to enjoy dogwalking!</h2><!--A 
             meaningless empty area appears underneath the main pic after having moved the slogan to the right of the main pic-->
         <nav class="bigger-font-size" style="position: relative; left: 950px; bottom: 527px;"><!--ARE THE LINKS ARE TOO CLOSE TO EACH OTHER?-->
@@ -55,7 +59,7 @@
                 <b>My Age: </b>3<br>
                 <b>My Hobby:</b> Fetching the frisbee<br>
                 <b>My Home:</b> Berlin, Vinetakiez<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
             <img src="brownie.jpg" alt="Brownie, a dog" width="200" height="250">
             <p>
@@ -63,7 +67,7 @@
                 <b>My Age: </b>5<br>
                 <b>My Hobby:</b> Playing football<br>
                 <b>My Home:</b> Berlin, Kreuzberg<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
             <img src="thomas.jpg" alt="Thomas, a dog" width="200" height="250">
             <p>
@@ -71,7 +75,7 @@
                 <b>My Age: </b>4<br>
                 <b>My Hobby:</b> Running like crazy<br>
                 <b>My Home:</b> Potsdam<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
             <img src="hundy.jpg" alt="Hundy, a dog" width="200" height="250">
             <p>
@@ -79,7 +83,7 @@
                 <b>My Age: </b>3<br>
                 <b>My Hobby:</b> Swimming in the lake<br>
                 <b>My Home:</b> Berlin, Wedding<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
             <img src="miny.jpg" alt="Miny, a dog" width="200" height="250">
             <p>
@@ -87,7 +91,7 @@
                 <b>My Age: </b>8<br>
                 <b>My Hobby:</b> Howling like a wolf<br>
                 <b>My Home:</b> Spreewald<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
             <img src="jet.jpg" alt="Jet, a dog" width="200" height="250">
             <p>
@@ -95,14 +99,17 @@
                 <b>My Age: </b>2<br>
                 <b>My Hobby:</b> Rolling in the grass<br>
                 <b>My Home:</b> Hoppegarten<br>
-                <button style="height: 35px;">Contact my owner to walk me!</button>
+                <button class="button">Contact my owner to walk me!</button>
             </p>
         </div>
         <hr>
         <footer class="bigger-font-size" id="contactus">
              Contact Us: dogwalkershub@gmail.com<br>
-             <button style="height: 40px;">Subscribe to Our Newsletter!</button> 
-             <p>Copyright © Üner ALTAY 2023</p>
+             <form id="Newsletter-Subscription" action="https://formdump.codeinstitute.net" method="POST">
+                <input id="name-field" type="text" placeholder="Your Email">
+                <input type="submit" value="Subscribe to Our Newsletter!">
+            </form>
+            <p id="Copyright">Copyright © Üner ALTAY 2023</p>
         </footer>
     </body>
 </html>
